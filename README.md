@@ -8,8 +8,8 @@ The script has the purpose of analyzing files and directories as well as easily 
 
 <ins>**Actions and their Usage**</ins>\
 <br>
-&nbsp;&nbsp;**1. changeOwner**\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change the owner of the file/directory.\
+\t**1. changeOwner**\
+\t\tChange the owner of the file/directory.\
           *Command Usage:*\
               ./bash.sh -a changeOwner -f <filename/folder> -o <new_owner>\
           *Options:*\
