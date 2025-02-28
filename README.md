@@ -9,13 +9,13 @@ The script has the purpose of analyzing files and directories as well as easily 
 <ins>**Actions and their Usage**</ins>\
 &emsp;**1. changeOwner**\
 &emsp;&emsp;&emsp;Change the owner of the file/directory.\
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*Command Usage:*\
-              ./bash.sh -a changeOwner -f <filename/folder> -o <new_owner>\
-          *Options:*\
-              -a : Action to be taken; in this case, change the ownership.\
-              -f <filename/folder> : Specify the file or folder (i.e., directory) you wish to make changes to. Note that if a folder is selected, changes will be done recursively.\
-              -o <new_owner> : Specify the new owner. The given owner must already exist.\
-              -h : Display this help information.\
+&emsp;&emsp;&emsp;*Command Usage:*\
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;./bash.sh -a changeOwner -f <filename/folder> -o <new_owner>\
+&emsp;&emsp;&emsp;*Options:*\
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-a : Action to be taken; in this case, change the ownership.\
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-f <filename/folder> : Specify the file or folder (i.e., directory) you wish to make changes to. Note that if a folder is selected, changes will be done recursively.\
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-o <new_owner> : Specify the new owner. The given owner must already exist.\
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-h : Display this help information.\
 <br>
     **2. changeGroup**\
           Change the group owner of the file/directory.\
