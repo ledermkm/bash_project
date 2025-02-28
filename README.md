@@ -7,10 +7,9 @@ The script has the purpose of analyzing files and directories as well as easily 
 <br>
 
 <ins>**Actions and their Usage**</ins>\
-<br>
 &emsp;**1. changeOwner**\
-&emsp;&emsp;Change the owner of the file/directory.\
-          *Command Usage:*\
+&emsp;&emsp;&emsp;Change the owner of the file/directory.\
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*Command Usage:*\
               ./bash.sh -a changeOwner -f <filename/folder> -o <new_owner>\
           *Options:*\
               -a : Action to be taken; in this case, change the ownership.\
