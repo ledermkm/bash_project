@@ -116,31 +116,31 @@ The script has the purpose of analyzing files and directories as well as easily 
 &emsp;&emsp;&emsp;[x] Displays group owner name\
 &emsp;&emsp;&emsp;[x] Displays permissions\
 - [x] Test action output:\
-&emsp;&emsp;&emsp; - [x] 1 input\
+&emsp;&emsp;&emsp;[x] 1 input\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"Fetching command to change ownership..."\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;changeOwner output\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Exit\
-&emsp;&emsp;&emsp; - [x] 2 input\
+&emsp;&emsp;&emsp;[x] 2 input\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"Fetching command to change group ownership..."\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;changeGroup output\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Exit\
-&emsp;&emsp;&emsp;- [x] 3 input\
+&emsp;&emsp;&emsp;[x] 3 input\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"Fetching command to change owner permissions..."\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;changeOPerm output\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Exit\
-&emsp;&emsp;&emsp; - [x] 4 input\
+&emsp;&emsp;&emsp;[x] 4 input\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"Fetching command to change group permissions..."\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;changeGPerm output\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Exit\
-&emsp;&emsp;&emsp; - [x] 5 input\
+&emsp;&emsp;&emsp;[x] 5 input\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"Fetching command to change permissions for all others beside owner/group..."\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;changeOtherPerm output\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Exit\
-&emsp;&emsp;&emsp; - [x] 6 input\
+&emsp;&emsp;&emsp; [x] 6 input\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"Fetching command to change permissions for ALL..."\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;changeAllPerm output\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Exit\
-&emsp;&emsp;&emsp; - [x] Invalid number input\
+&emsp;&emsp;&emsp;[x] Invalid number input\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"$action is not a valid option. Please select a valid action's corresponding number [1-5]."\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Exit\
 
@@ -161,100 +161,100 @@ The script has the purpose of analyzing files and directories as well as easily 
 - [x] Test missing arguments for changing owner: ./bash.sh -a changeOwner -f dir\
 &emsp;&emsp;&emsp;"Error: Missing required options for changing owner."\
 - [x] Test changing group owner for file: ./bash.sh -a changeGroup -f test.txt -o klede\
-&emsp;&emsp;&emsp; - [x] Reflects correctly in ‘ll’\
+&emsp;&emsp;&emsp;[x] Reflects correctly in ‘ll’\
 - [x] Test changing group owner for directory: ./bash.sh -a changeGroup -f dir -o klede\
-&emsp;&emsp;&emsp; - [x] Reflects correctly in ‘ll’\
+&emsp;&emsp;&emsp;[x] Reflects correctly in ‘ll’\
 - [x] Test missing arguments for changing group owner: ./bash.sh -a changeGroup -f dir\
 &emsp;&emsp;&emsp;"Error: Missing required options for changing group."\
 - [x] Test changing owner permissions for file:\
-&emsp;&emsp;&emsp; - [x] Read only: ./bash.sh -a changeOPerm -f test.txt -p read\
-&emsp;&emsp;&emsp; - [x] Read/write only: ./bash.sh -a changeOPerm -f test.txt -p rwrite\
-&emsp;&emsp;&emsp; - [x] Read/execute only: ./bash.sh -a changeOPerm -f test.txt -p rexecute\
-&emsp;&emsp;&emsp; - [x] Write only: ./bash.sh -a changeOPerm -f test.txt -p write\
-&emsp;&emsp;&emsp; - [x] Write/execute only: ./bash.sh -a changeOPerm -f test.txt -p wexecute\
-&emsp;&emsp;&emsp; - [x] Execute only: ./bash.sh -a changeOPerm -f test.txt -p execute\
-&emsp;&emsp;&emsp; - [x] Read/write/execute: ./bash.sh -a changeOPerm -f test.txt -p rwexecute\
-&emsp;&emsp;&emsp; - [x] Zero: ./bash.sh -a changeOPerm -f test.txt -p zero\
-&emsp;&emsp;&emsp; - [x] Help info: ./bash.sh -a changeOPerm -h\
+&emsp;&emsp;&emsp;[x] Read only: ./bash.sh -a changeOPerm -f test.txt -p read\
+&emsp;&emsp;&emsp; [x] Read/write only: ./bash.sh -a changeOPerm -f test.txt -p rwrite\
+&emsp;&emsp;&emsp;[x] Read/execute only: ./bash.sh -a changeOPerm -f test.txt -p rexecute\
+&emsp;&emsp;&emsp;[x] Write only: ./bash.sh -a changeOPerm -f test.txt -p write\
+&emsp;&emsp;&emsp;[x] Write/execute only: ./bash.sh -a changeOPerm -f test.txt -p wexecute\
+&emsp;&emsp;&emsp;[x] Execute only: ./bash.sh -a changeOPerm -f test.txt -p execute\
+&emsp;&emsp;&emsp;[x] Read/write/execute: ./bash.sh -a changeOPerm -f test.txt -p rwexecute\
+&emsp;&emsp;&emsp;[x] Zero: ./bash.sh -a changeOPerm -f test.txt -p zero\
+&emsp;&emsp;&emsp;[x] Help info: ./bash.sh -a changeOPerm -h\
 - [x] Test changing owner permissions for directory:\
-&emsp;&emsp;&emsp; - [x] Read only: ./bash.sh -a changeOPerm -f dir -p read\
-&emsp;&emsp;&emsp; - [x] Read/write only: ./bash.sh -a changeOPerm -f dir -p rwrite\
-&emsp;&emsp;&emsp; - [x] Read/execute only: ./bash.sh -a changeOPerm -f dir -p rexecute\
-&emsp;&emsp;&emsp; - [x] Write only: ./bash.sh -a changeOPerm -f dir -p write\
-&emsp;&emsp;&emsp; - [x] Write/execute only: ./bash.sh -a changeOPerm -f dir -p wexecute\
-&emsp;&emsp;&emsp; - [x] Execute only: ./bash.sh -a changeOPerm -f dir -p execute\
-&emsp;&emsp;&emsp; - [x] Read/write/execute: ./bash.sh -a changeOPerm -f dir -p rwexecute\
-&emsp;&emsp;&emsp; - [x] Zero: ./bash.sh -a changeOPerm -f dir -p zero\
-&emsp;&emsp;&emsp; - [x] Help info: ./bash.sh -a changeOPerm -h\
+&emsp;&emsp;&emsp;[x] Read only: ./bash.sh -a changeOPerm -f dir -p read\
+&emsp;&emsp;&emsp;[x] Read/write only: ./bash.sh -a changeOPerm -f dir -p rwrite\
+&emsp;&emsp;&emsp;[x] Read/execute only: ./bash.sh -a changeOPerm -f dir -p rexecute\
+&emsp;&emsp;&emsp;[x] Write only: ./bash.sh -a changeOPerm -f dir -p write\
+&emsp;&emsp;&emsp;[x] Write/execute only: ./bash.sh -a changeOPerm -f dir -p wexecute\
+&emsp;&emsp;&emsp;[x] Execute only: ./bash.sh -a changeOPerm -f dir -p execute\
+&emsp;&emsp;&emsp;[x] Read/write/execute: ./bash.sh -a changeOPerm -f dir -p rwexecute\
+&emsp;&emsp;&emsp;[x] Zero: ./bash.sh -a changeOPerm -f dir -p zero\
+&emsp;&emsp;&emsp;[x] Help info: ./bash.sh -a changeOPerm -h\
 - [x] Test missing option (owner permissions): ./bash.sh -a changeOPerm -f dir\
 &emsp;&emsp;&emsp;"Error: Missing required options for changing permissions."\
-&emsp;&emsp;&emsp; - [x] Test incorrect option (owner permissions): ./bash.sh -a changeOPerm -f dir -p moo\
-&emsp;&emsp;&emsp; - [x] Test changing group permissions for file:\
-&emsp;&emsp;&emsp; - [x] Read only: ./bash.sh -a changeGPerm -f test.txt -p read\
-&emsp;&emsp;&emsp; - [x] Read/write only: ./bash.sh -a changeGPerm -f test.txt -p rwrite\
-&emsp;&emsp;&emsp; - [x] Read/execute only: ./bash.sh -a changeGPerm -f test.txt -p rexecute\
-&emsp;&emsp;&emsp; - [x] Write only: ./bash.sh -a changeGPerm -f test.txt -p write\
-&emsp;&emsp;&emsp; - [x] Write/execute only: ./bash.sh -a changeGPerm -f test.txt -p wexecute\
-&emsp;&emsp;&emsp; - [x] Execute only: ./bash.sh -a changeGPerm -f test.txt -p execute\
-&emsp;&emsp;&emsp; - [x] Read/write/execute: ./bash.sh -a changeGPerm -f test.txt -p rwexecute\
-&emsp;&emsp;&emsp; - [x] Zero: ./bash.sh -a changeGPerm -f test.txt -p zero\
-&emsp;&emsp;&emsp; - [x] Help info: ./bash.sh -a changeGPerm -h\
+&emsp;&emsp;&emsp;[x] Test incorrect option (owner permissions): ./bash.sh -a changeOPerm -f dir -p moo\
+&emsp;&emsp;&emsp;[x] Test changing group permissions for file:\
+&emsp;&emsp;&emsp;[x] Read only: ./bash.sh -a changeGPerm -f test.txt -p read\
+&emsp;&emsp;&emsp;[x] Read/write only: ./bash.sh -a changeGPerm -f test.txt -p rwrite\
+&emsp;&emsp;&emsp;[x] Read/execute only: ./bash.sh -a changeGPerm -f test.txt -p rexecute\
+&emsp;&emsp;&emsp;[x] Write only: ./bash.sh -a changeGPerm -f test.txt -p write\
+&emsp;&emsp;&emsp;[x] Write/execute only: ./bash.sh -a changeGPerm -f test.txt -p wexecute\
+&emsp;&emsp;&emsp;[x] Execute only: ./bash.sh -a changeGPerm -f test.txt -p execute\
+&emsp;&emsp;&emsp;[x] Read/write/execute: ./bash.sh -a changeGPerm -f test.txt -p rwexecute\
+&emsp;&emsp;&emsp;[x] Zero: ./bash.sh -a changeGPerm -f test.txt -p zero\
+&emsp;&emsp;&emsp;[x] Help info: ./bash.sh -a changeGPerm -h\
 - [x] Test changing group permissions for directory:\
-&emsp;&emsp;&emsp; - [x] Read only: ./bash.sh -a changeGPerm -f dir -p read\
-&emsp;&emsp;&emsp; - [x] Read/write only: ./bash.sh -a changeGPerm -f dir -p rwrite\
-&emsp;&emsp;&emsp; - [x] Read/execute only: ./bash.sh -a changeGPerm -f dir -p rexecute\
-&emsp;&emsp;&emsp; - [x] Write only: ./bash.sh -a changeGPerm -f dir -p write\
-&emsp;&emsp;&emsp; - [x] Write/execute only: ./bash.sh -a changeGPerm -f dir -p wexecute\
-&emsp;&emsp;&emsp; - [x] Execute only: ./bash.sh -a changeGPerm -f dir -p execute\
-&emsp;&emsp;&emsp; - [x] Read/write/execute: ./bash.sh -a changeGPerm -f dir -p rwexecute\
-&emsp;&emsp;&emsp; - [x] Zero: ./bash.sh -a changeGPerm -f dir -p zero\
-&emsp;&emsp;&emsp; - [x] Help info: ./bash.sh -a changeGPerm -h\
+&emsp;&emsp;&emsp;[x] Read only: ./bash.sh -a changeGPerm -f dir -p read\
+&emsp;&emsp;&emsp;[x] Read/write only: ./bash.sh -a changeGPerm -f dir -p rwrite\
+&emsp;&emsp;&emsp;[x] Read/execute only: ./bash.sh -a changeGPerm -f dir -p rexecute\
+&emsp;&emsp;&emsp;[x] Write only: ./bash.sh -a changeGPerm -f dir -p write\
+&emsp;&emsp;&emsp;[x] Write/execute only: ./bash.sh -a changeGPerm -f dir -p wexecute\
+&emsp;&emsp;&emsp;[x] Execute only: ./bash.sh -a changeGPerm -f dir -p execute\
+&emsp;&emsp;&emsp;[x] Read/write/execute: ./bash.sh -a changeGPerm -f dir -p rwexecute\
+&emsp;&emsp;&emsp;[x] Zero: ./bash.sh -a changeGPerm -f dir -p zero\
+&emsp;&emsp;&emsp;[x] Help info: ./bash.sh -a changeGPerm -h\
 - [x] Test missing option (group permissions): ./bash.sh -a changeGPerm -f dir\
 "Error: Missing required options for changing permissions."\
 &emsp;&emsp;&emsp;Test incorrect option (group permissions): ./bash.sh -a changeGPerm -f dir -p moo\
 - [x] Test changing other permissions for file:\
-&emsp;&emsp;&emsp; - [x] Read only: ./bash.sh -a changeOtherPerm -f test.txt -p read\
-&emsp;&emsp;&emsp; - [x] Read/write only: ./bash.sh -a changeOtherPerm -f test.txt -p rwrite\
-&emsp;&emsp;&emsp; - [x] Read/execute only: ./bash.sh -a changeOtherPerm -f test.txt -p rexecute\
-&emsp;&emsp;&emsp; - [x] Write only: ./bash.sh -a changeOtherPerm -f test.txt -p write\
-&emsp;&emsp;&emsp; - [x] Write/execute only: ./bash.sh -a changeOtherPerm -f test.txt -p wexecute\
-&emsp;&emsp;&emsp; - [x] Execute only: ./bash.sh -a changeOtherPerm -f test.txt -p execute\
-&emsp;&emsp;&emsp; - [x] Read/write/execute: ./bash.sh -a changeOtherPerm -f test.txt -p rwexecute\
-&emsp;&emsp;&emsp; - [x] Zero: ./bash.sh -a changeOtherPerm -f test.txt -p zero\
-&emsp;&emsp;&emsp; - [x] Help info: ./bash.sh -a changeOtherPerm -h\
+&emsp;&emsp;&emsp;[x] Read only: ./bash.sh -a changeOtherPerm -f test.txt -p read\
+&emsp;&emsp;&emsp;[x] Read/write only: ./bash.sh -a changeOtherPerm -f test.txt -p rwrite\
+&emsp;&emsp;&emsp;[x] Read/execute only: ./bash.sh -a changeOtherPerm -f test.txt -p rexecute\
+&emsp;&emsp;&emsp;[x] Write only: ./bash.sh -a changeOtherPerm -f test.txt -p write\
+&emsp;&emsp;&emsp;[x] Write/execute only: ./bash.sh -a changeOtherPerm -f test.txt -p wexecute\
+&emsp;&emsp;&emsp;[x] Execute only: ./bash.sh -a changeOtherPerm -f test.txt -p execute\
+&emsp;&emsp;&emsp;[x] Read/write/execute: ./bash.sh -a changeOtherPerm -f test.txt -p rwexecute\
+&emsp;&emsp;&emsp;[x] Zero: ./bash.sh -a changeOtherPerm -f test.txt -p zero\
+&emsp;&emsp;&emsp;[x] Help info: ./bash.sh -a changeOtherPerm -h\
 - [x] Test changing other permissions for directory:\
-&emsp;&emsp;&emsp; - [x] Read only: ./bash.sh -a changeOtherPerm -f dir -p read\
-&emsp;&emsp;&emsp; - [x] Read/write only: ./bash.sh -a changeOtherPerm -f dir -p rwrite\
-&emsp;&emsp;&emsp; - [x] Read/execute only: ./bash.sh -a changeOtherPerm -f dir -p rexecute\
-&emsp;&emsp;&emsp; - [x] Write only: ./bash.sh -a changeOtherPerm -f dir -p write\
-&emsp;&emsp;&emsp; - [x] Write/execute only: ./bash.sh -a changeOtherPerm -f dir -p wexecute\
-&emsp;&emsp;&emsp; - [x] Execute only: ./bash.sh -a changeOtherPerm -f dir -p execute\
-&emsp;&emsp;&emsp; - [x] Read/write/execute: ./bash.sh -a changeOtherPerm -f dir -p rwexecute\
-&emsp;&emsp;&emsp; - [x] Zero: ./bash.sh -a changeOtherPerm -f dir -p zero\
-&emsp;&emsp;&emsp; - [x] Help info: ./bash.sh -a changeOtherPerm -h\
+&emsp;&emsp;&emsp;[x] Read only: ./bash.sh -a changeOtherPerm -f dir -p read\
+&emsp;&emsp;&emsp;[x] Read/write only: ./bash.sh -a changeOtherPerm -f dir -p rwrite\
+&emsp;&emsp;&emsp;[x] Read/execute only: ./bash.sh -a changeOtherPerm -f dir -p rexecute\
+&emsp;&emsp;&emsp;[x] Write only: ./bash.sh -a changeOtherPerm -f dir -p write\
+&emsp;&emsp;&emsp;[x] Write/execute only: ./bash.sh -a changeOtherPerm -f dir -p wexecute\
+&emsp;&emsp;&emsp;[x] Execute only: ./bash.sh -a changeOtherPerm -f dir -p execute\
+&emsp;&emsp;&emsp;[x] Read/write/execute: ./bash.sh -a changeOtherPerm -f dir -p rwexecute\
+&emsp;&emsp;&emsp;[x] Zero: ./bash.sh -a changeOtherPerm -f dir -p zero\
+&emsp;&emsp;&emsp;[x] Help info: ./bash.sh -a changeOtherPerm -h\
 - [x] Test missing option (other permissions): ./bash.sh -a changeOtherPerm -f dir\
 &emsp;&emsp;&emsp;"Error: Missing required options for changing permissions."\
 - [x] Test incorrect option (other permissions): ./bash.sh -a changeOtherPerm -f dir -p moo\
 - [x] Test changing all permissions for file:\
-&emsp;&emsp;&emsp; - [x] Read only: ./bash.sh -a changeAllPerm -f test.txt -p read\
-&emsp;&emsp;&emsp; - [x] Read/write only: ./bash.sh -a changeAllPerm -f test.txt -p rwrite\
-&emsp;&emsp;&emsp; - [x] Read/execute only: ./bash.sh -a changeAllPerm -f test.txt -p rexecute\
-&emsp;&emsp;&emsp; - [x] Write only: ./bash.sh -a changeAllPerm -f test.txt -p write\
-&emsp;&emsp;&emsp; - [x] Write/execute only: ./bash.sh -a changeAllPerm -f test.txt -p wexecute\
-&emsp;&emsp;&emsp; - [x] Execute only: ./bash.sh -a changeAllPerm -f test.txt -p execute\
-&emsp;&emsp;&emsp; - [x] Read/write/execute: ./bash.sh -a changeAllPerm -f test.txt -p rwexecute\
-&emsp;&emsp;&emsp; - [x] Zero: ./bash.sh -a changeAllPerm -f test.txt -p zero\
-&emsp;&emsp;&emsp; - [x] Help info: ./bash.sh -a changeAllPerm -h\
+&emsp;&emsp;&emsp;[x] Read only: ./bash.sh -a changeAllPerm -f test.txt -p read\
+&emsp;&emsp;&emsp;[x] Read/write only: ./bash.sh -a changeAllPerm -f test.txt -p rwrite\
+&emsp;&emsp;&emsp;[x] Read/execute only: ./bash.sh -a changeAllPerm -f test.txt -p rexecute\
+&emsp;&emsp;&emsp;[x] Write only: ./bash.sh -a changeAllPerm -f test.txt -p write\
+&emsp;&emsp;&emsp;[x] Write/execute only: ./bash.sh -a changeAllPerm -f test.txt -p wexecute\
+&emsp;&emsp;&emsp;[x] Execute only: ./bash.sh -a changeAllPerm -f test.txt -p execute\
+&emsp;&emsp;&emsp;[x] Read/write/execute: ./bash.sh -a changeAllPerm -f test.txt -p rwexecute\
+&emsp;&emsp;&emsp;[x] Zero: ./bash.sh -a changeAllPerm -f test.txt -p zero\
+&emsp;&emsp;&emsp;[x] Help info: ./bash.sh -a changeAllPerm -h\
 - [x] Test changing all permissions for directory:\
-&emsp;&emsp;&emsp; - [x] Read only: ./bash.sh -a changeAllPerm -f dir -p read\
-&emsp;&emsp;&emsp; - [x] Read/write only: ./bash.sh -a changeAllPerm -f dir -p rwrite\
-&emsp;&emsp;&emsp; - [x] Read/execute only: ./bash.sh -a changeAllPerm -f dir -p rexecute\
-&emsp;&emsp;&emsp; - [x] Write only: ./bash.sh -a changeAllPerm -f dir -p write\
-&emsp;&emsp;&emsp; - [x] Write/execute only: ./bash.sh -a changeAllPerm -f dir -p wexecute\
-&emsp;&emsp;&emsp; - [x] Execute only: ./bash.sh -a changeAllPerm -f dir -p execute\
-&emsp;&emsp;&emsp; - [x] Read/write/execute: ./bash.sh -a changeAllPerm -f dir -p rwexecute\
-&emsp;&emsp;&emsp; - [x] Zero: ./bash.sh -a changeAllPerm -f dir -p zero\
-&emsp;&emsp;&emsp; - [x] Help info: ./bash.sh -a changeAllPerm -h\
+&emsp;&emsp;&emsp;[x] Read only: ./bash.sh -a changeAllPerm -f dir -p read\
+&emsp;&emsp;&emsp;[x] Read/write only: ./bash.sh -a changeAllPerm -f dir -p rwrite\
+&emsp;&emsp;&emsp;[x] Read/execute only: ./bash.sh -a changeAllPerm -f dir -p rexecute\
+&emsp;&emsp;&emsp;[x] Write only: ./bash.sh -a changeAllPerm -f dir -p write\
+&emsp;&emsp;&emsp;[x] Write/execute only: ./bash.sh -a changeAllPerm -f dir -p wexecute\
+&emsp;&emsp;&emsp;[x] Execute only: ./bash.sh -a changeAllPerm -f dir -p execute\
+&emsp;&emsp;&emsp;[x] Read/write/execute: ./bash.sh -a changeAllPerm -f dir -p rwexecute\
+&emsp;&emsp;&emsp;[x] Zero: ./bash.sh -a changeAllPerm -f dir -p zero\
+&emsp;&emsp;&emsp;[x] Help info: ./bash.sh -a changeAllPerm -h\
 - [x] Test missing option (group permissions): ./bash.sh -a changeAllPerm -f dir\
 &emsp;&emsp;&emsp;"Error: Missing required options for changing permissions."\
 - [x] Test incorrect option (group permissions): ./bash.sh -a changeAllPerm -f dir -p moo\
