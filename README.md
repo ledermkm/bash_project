@@ -103,7 +103,7 @@ The script has the purpose of analyzing files and directories as well as easily 
 <br>
 <br>
 
-<ins>**Testing Completed**</ins>
+<ins>**Testing Completed**</ins>\
 **No Arguments Provided (Ask for numbers)**
 - [x] Test valid file for ‘Enter the file and/or directory you wish to update:’\
 - [x] Test valid directory for ‘Enter the file and/or directory you wish to update:’\
