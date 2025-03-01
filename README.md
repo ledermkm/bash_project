@@ -116,7 +116,7 @@ The script has the purpose of analyzing files and directories as well as easily 
 &emsp;&emsp;&emsp;[x] Displays size\
 &emsp;&emsp;&emsp;[x] Displays owner name\
 &emsp;&emsp;&emsp;[x] Displays group owner name\
-&emsp;&emsp;&emsp;[x] Displays permissions\
+&emsp;&emsp;&emsp;[x] Displays permissions
 - [x] Test action output:\
 &emsp;&emsp;&emsp;[x] 1 input\
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"Fetching command to change ownership..."\
