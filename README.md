@@ -1,6 +1,6 @@
 # Bash Project: File Permissions Manager
 
-Hello! This is my repository for my bash project for IT3038, Scripting Languages: File Permissions Manager.
+Hello! This is my repository for my bash project for IT3038, Scripting Languages: File Permissions Manager (i.e., bash.sh).
 
 The script has the purpose of analyzing files and directories as well as easily changing the owner, the group owner, and permissions of the file/directory. This is done through the available actions of the script, including changeOwner, changeGroup, changeOPerm, changeGPerm, changeOtherPerm, and changeAllPerm.
 
