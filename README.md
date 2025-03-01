@@ -5,6 +5,7 @@ Hello! This is my repository for my bash project for IT3038, Scripting Languages
 The script has the purpose of analyzing files and directories as well as easily changing the owner, the group owner, and permissions of the file/directory. This is done through the available actions of the script, including changeOwner, changeGroup, changeOPerm, changeGPerm, changeOtherPerm, and changeAllPerm.
 
 <br>
+<br>
 
 <ins>**Actions and their Usage**</ins>\
 &emsp;**1. changeOwner**\
@@ -100,9 +101,10 @@ The script has the purpose of analyzing files and directories as well as easily 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-h : Display this help information.
 
 <br>
+<br>
 
-<ins>**Testing Completed**</ins>\
-**No Arguments Provided (Ask for numbers)**\
+<ins>**Testing Completed**</ins>
+**No Arguments Provided (Ask for numbers)**
 - [x] Test valid file for ‘Enter the file and/or directory you wish to update:’\
 - [x] Test valid directory for ‘Enter the file and/or directory you wish to update:’\
 - [x] Test invalid file for ‘Enter the file and/or directory you wish to update:’\
@@ -145,9 +147,8 @@ The script has the purpose of analyzing files and directories as well as easily 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Exit\
 
 <br>
-<br>
 
-**If Arguments Provided**\
+**If Arguments Provided**
 - [x] If only action and no other arguments provided:\
 &emsp;&emsp;&emsp;"Missing Arguments"\
 - [x] Test incorrect action: ./bash.sh -a changeTPerm -f dir -p rwexecute\
